@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+body
+{
+  padding-top: 5rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*
+{
+  font-family: 'Josefin Sans', sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
+
+
+::-webkit-scrollbar
+{
+  @apply w-0
+}
+
+.border-img
+{
+  border-top: 4px solid white;
+  border-image-source: radial-gradient(circle at top right,
+  #bf307a, transparent 50%);
+  border-image-slice: 1;
+}
+
+li
+{
+  @apply text-white uppercase hover:text-quaternary duration-300 
+}
+
+::selection
+{
+  @apply text-quaternary
+}
+
+button
+{
+  @apply px-4 py-3 rounded-lg text-lg hover:bg-quaternary duration-500 hover:drop-shadow-lg text-white border-none  uppercase font-bold
+}
+
+input, textarea
+{
+  @apply bg-secondary py-4 px-2
+}
+
+
+.Custom_width
+{
+  @apply max-w-[1240px] mx-auto
+}
+
