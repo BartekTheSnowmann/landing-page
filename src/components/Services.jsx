@@ -7,12 +7,10 @@ function Services() {
 
   const ContainerVariant = {
     hidden: {
-      opacity:0
      },
     show: {
-      opacity:1,
       transition: {
-        staggerChildren: 0.4,}
+        staggerChildren: 0.8,}
     }
   }
   
@@ -24,8 +22,7 @@ function Services() {
       opacity: 1,
       y:0,
       transition:{
-        type:'tween',
-        duration:0.8
+        type:'spring',
       }
     },
   }
