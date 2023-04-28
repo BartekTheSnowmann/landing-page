@@ -10,7 +10,7 @@ function Services() {
      },
     show: {
       transition: {
-        staggerChildren: 0.8,}
+        staggerChildren: 1.2,}
     }
   }
   
@@ -22,6 +22,7 @@ function Services() {
       opacity: 1,
       y:0,
       transition:{
+
         type:'spring',
       }
     },
