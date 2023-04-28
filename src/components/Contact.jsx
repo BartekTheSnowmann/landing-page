@@ -32,12 +32,12 @@ function Contact() {
           ref={FormRef}
           onSubmit={HandleSubmit}>
                   <div className='relative'>
-                    <input onChange={e=>setWritersName(e.target.value)} id="email" type="text" className="peer w-full text-primary placeholder-transparent focus:outline-none focus:border-tertiary" placeholder="Name" />
-                    <label htmlFor="email" className="absolute left-2 -top-4 -translate-y-1/2 text-xl transition-all peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-1/2 peer-focus:-top-4 peer-focus:left-2 peer-focus:text-primary">Name</label>
+                    <input onChange={e=>setWritersName(e.target.value)} id="name" type="text" className="peer w-full text-primary placeholder-transparent focus:outline-none focus:border-tertiary" placeholder="Name" />
+                    <label htmlFor="name" className="absolute left-2 -top-4 -translate-y-1/2 text-xl transition-all peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-1/2 peer-focus:-top-4 peer-focus:left-2 peer-focus:text-primary">Name</label>
                     </div>
                   <div className="relative mt-10">
-                    <input id="name" type="text" className="peer w-full text-primary placeholder-transparent focus:outline-none focus:border-tertiary" placeholder="Email" />
-                    <label htmlFor="name" className="absolute left-2 -top-4 -translate-y-1/2 text-xl transition-all peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-1/2 peer-focus:-top-4 peer-focus:left-2 peer-focus:text-primary">Email</label>
+                    <input id="email" type="text" className="peer w-full text-primary placeholder-transparent focus:outline-none focus:border-tertiary" placeholder="Email" />
+                    <label htmlFor="email" className="absolute left-2 -top-4 -translate-y-1/2 text-xl transition-all peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-1/2 peer-focus:-top-4 peer-focus:left-2 peer-focus:text-primary">Email</label>
                   </div>
                   <div className="relative mt-10">
                     <textarea cols="30" rows="10" id="message" type="text" className="peer w-full text-primary placeholder-transparent focus:outline-none focus:border-tertiary" placeholder="Message" />
