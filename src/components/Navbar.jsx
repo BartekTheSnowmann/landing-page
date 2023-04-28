@@ -65,7 +65,8 @@ function Navbar() {
           <ul className='shadow-xl shadow-primary flex flex-col justify-evenly items-center h-full gap-x-4'>
             {['Home', 'Services' ,'About', 'Contact'].map((item)=>
             (
-              <li key={`link-${item}`}>
+              <li key={`link-${item}`}
+              onClick={()=>SetMenuOpen(false)}>
                 <a href={`#${item}`}>{item}</a>
               </li>
             ))}
