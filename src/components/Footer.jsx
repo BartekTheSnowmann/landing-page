@@ -42,9 +42,8 @@ function Footer() {
           </div>
       </div>
       <div className='flex items-center justify-center text-white py-6 gap-x-2'>
-        <h1>copyright</h1>
+        <p>Logome</p>
         <AiOutlineCopyright />
-        <p>LogoHey all rights reserved.</p>
       </div>
   </div>
   )
