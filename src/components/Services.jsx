@@ -10,7 +10,7 @@ function Services() {
      },
     show: {
       transition: {
-        staggerChildren: 1.2,}
+        staggerChildren: 0.8,}
     }
   }
   
